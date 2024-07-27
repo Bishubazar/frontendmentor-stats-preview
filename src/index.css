@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+/* - Inter Weights: 400, 700 */
+
+/* - Lexend Weights: 400 */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 15px;
+        @apply bg-blue-vdark;
+    }
+
+    p {
+        @apply text-xs text-white-p sm:text-[15px];
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply text-white-heading;
+    }
+    .title {
+        font-family: "Lexend Deca";
+        font-weight: 400;
+    }
+}
